@@ -1,0 +1,8 @@
+# Compiled Java class files
+*.class
+classes.main*
+
+# Maven
+target/
+dist/
+
