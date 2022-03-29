@@ -18,7 +18,7 @@
 		<java.version>11</java.version>
 		<spring-boot.version>0.0.1.RELEASE</spring-boot.version>
 		<start-class>classes.Main</start-class>
-		<graalvm.version>21.2.0</graalvm.version>
+		<graalvm.version>19.3.0</graalvm.version>
 	</properties>
 
 	<dependencies>
@@ -116,16 +116,6 @@
 							<skip>false</skip>
 							<imageName>${exe.file.name}</imageName>
 							<mainClass>${start-class}</mainClass>
-							<buildArgs>
-								<buildArg>-H:ReflectionConfigurationFiles=../reflect.json</buildArg>
-								<buildArg>-H:+ReportExceptionStackTraces</buildArg>
-								<buildArg>-H:-UseServiceLoaderFeature</buildArg>
-								<buildArg>--no-server</buildArg>
-								<buildArg>--no-fallback</buildArg>
-								<buildArg>--report-unsupported-elements-at-runtime</buildArg>
-								<buildArg>--allow-incomplete-classpath</buildArg>
-								<buildArg>-H:IncludeResourceBundles=jakarta.xml.bind.Messages</buildArg>
-							</buildArgs>
 						</configuration>
 					</plugin>
 				</plugins>
