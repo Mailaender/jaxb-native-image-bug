@@ -19,6 +19,7 @@
 		<spring-boot.version>0.0.1.RELEASE</spring-boot.version>
 		<start-class>classes.Main</start-class>
 		<graalvm.version>21.2.0</graalvm.version>
+		<native.maven.plugin.version>0.9.11</native.maven.plugin.version>
 	</properties>
 
 	<dependencies>
@@ -101,15 +102,24 @@
 					</plugin>
 					<!-- Native Image -->
 					<plugin>
-						<groupId>org.graalvm.nativeimage</groupId>
-						<artifactId>native-image-maven-plugin</artifactId>
-						<version>${graalvm.version}</version>
+						<groupId>org.graalvm.buildtools</groupId>
+						<artifactId>native-maven-plugin</artifactId>
+						<version>${native.maven.plugin.version}</version>
+						<extensions>true</extensions>
 						<executions>
 							<execution>
+								<id>build-native</id>
 								<goals>
-									<goal>native-image</goal>
+									<goal>build</goal>
 								</goals>
 								<phase>package</phase>
+							</execution>
+							<execution>
+								<id>test-native</id>
+								<goals>
+									<goal>test</goal>
+								</goals>
+								<phase>test</phase>
 							</execution>
 						</executions>
 						<configuration>
