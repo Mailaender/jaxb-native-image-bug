@@ -127,14 +127,8 @@
 							<imageName>${exe.file.name}</imageName>
 							<mainClass>${start-class}</mainClass>
 							<buildArgs>
-								<buildArg>-H:ReflectionConfigurationFiles=../reflect.json</buildArg>
-								<buildArg>-H:+ReportExceptionStackTraces</buildArg>
-								<buildArg>-H:-UseServiceLoaderFeature</buildArg>
-								<buildArg>--no-server</buildArg>
+								<buildArg>-H:ConfigurationFileDirectories=META-INF/native-image</buildArg>
 								<buildArg>--no-fallback</buildArg>
-								<buildArg>--report-unsupported-elements-at-runtime</buildArg>
-								<buildArg>--allow-incomplete-classpath</buildArg>
-								<buildArg>-H:IncludeResourceBundles=jakarta.xml.bind.Messages</buildArg>
 							</buildArgs>
 						</configuration>
 					</plugin>

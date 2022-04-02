@@ -17,6 +17,11 @@ export JAVA_HOME="${GRAALVM_HOME}"
 export PATH="${GRAALVM_HOME}/bin:$PATH"
 ```
 
+Run this only once:
+```bash
+java -agentlib:native-image-agent=config-output-dir=META-INF/native-image -jar target/example-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+```
+
 ## Build
 
 ```bash
@@ -26,5 +31,5 @@ mvn clean package -PNATIVE_IMAGE
 ## Run
 
 ```bash
-./target/classes.main
+./target/example
 ```

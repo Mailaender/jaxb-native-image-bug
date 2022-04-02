@@ -1,0 +1,44 @@
+[
+{
+  "name":"classes.Main$Data",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queriedMethods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.Object",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.glassfish.jaxb.core.v2.model.nav.ReflectionNavigator",
+  "methods":[{"name":"getInstance","parameterTypes":[] }]
+},
+{
+  "name":"org.glassfish.jaxb.runtime.v2.runtime.property.ArrayElementLeafProperty",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"org.glassfish.jaxb.runtime.v2.runtime.property.ArrayElementNodeProperty",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"org.glassfish.jaxb.runtime.v2.runtime.property.ArrayReferenceNodeProperty",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"org.glassfish.jaxb.runtime.v2.runtime.property.SingleElementLeafProperty",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"org.glassfish.jaxb.runtime.v2.runtime.property.SingleElementNodeProperty",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"org.glassfish.jaxb.runtime.v2.runtime.property.SingleMapNodeProperty",
+  "queryAllPublicConstructors":true
+},
+{
+  "name":"org.glassfish.jaxb.runtime.v2.runtime.property.SingleReferenceNodeProperty",
+  "queryAllPublicConstructors":true
+}
+]
